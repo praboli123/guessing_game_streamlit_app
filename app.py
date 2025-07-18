@@ -19,7 +19,7 @@ if st.button("submit guess"):
 
 
         if guess == num :
-            st.session_state.feedback = f"congaralutations, your guess is right in {len(st.session_state.guesses[-1}): tries !
+            st.session_state.feedback = f"congaralutations, your guess is right in {len(st.session_state.guesses)-1}: tries !"
             if abs(num-guess) - abs(num-st.session_state.guesses[-2]) :
                 st.session_state.feedback = "warmer"
             else:
